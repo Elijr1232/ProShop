@@ -15,7 +15,6 @@ const ProductCarousel = () => {
   useEffect(() => {
     dispatch(listTopProducts());
   }, [dispatch]);
-  console.log(products, "hey");
   return loading ? (
     <Loader />
   ) : error ? (
